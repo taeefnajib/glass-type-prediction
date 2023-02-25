@@ -1,4 +1,4 @@
-# **Glass Type Classification Using PyCaret**
+# **Glass Type Prediction Web Application**
 
 In this project, we are going to classify the type of a glass based on the elements used in the glass.
 The chemical elements are as follow:
@@ -11,4 +11,3 @@ The chemical elements are as follow:
 * Ca - Calcium
 * Ba - Barium
 * Fe - Iron
-
