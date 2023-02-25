@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Glass Type Prediction</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../static/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@0;1&family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/c9c493ee57.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row heading">
+                <h1 class="text-center">Glass Type Prediction</h1>
+                <br>
+                <p class="text-center">Insert the amount of chemical elements in a glass to find out the type of it.</p>
+                <br>
+                <p class="text-center">For example, if you insert the values as follow:</p>
+                <p class="text-center">Iridium : 1.51730, Sodium : 12.35, Magnesium : 2.72, Aluminium : 1.63, <br>Silicon : 72.87,
+                Potassium : 0.70, Calcium : 9.23, Barium : 0.00 and Iron :	0.00</p>
+                <br>
+                <p class="text-center">It will return the type as 'build wind non-float'</p>
+            </div>
+            <form action="{{ url_for('predict')}}" method="post" class="form">
+                <div class="row">
+                    <div class="col">
+                        <label class="label" for="Iridium">Iridium</label>
+                        <br>
+                        <input type="text" name="Iridium" id="Iridium" class="text-input"/>
+                        <br>
+                        <label class="label" for="Sodium">Sodium</label>
+                        <br>
+                        <input type="text" name="Sodium" id="Sodium" class="text-input"/>
+                        <br>
+                        <label class="label" for="Magnesium">Magnesium</label>
+                        <br>
+                        <input type="text" name="Magnesium" id="Magnesium" class="text-input"/>
+                    </div>
+                    <div class="col">
+                        <label class="label" for="Aluminium">Aluminium</label>
+                        <br>
+                        <input type="text" name="Aluminium" id="Aluminium" class="text-input"/>
+                        <br>
+                        <label class="label" for="Silicon">Silicon</label>
+                        <br>
+                        <input type="text" name="Silicon" id="Silicon" class="text-input"/>
+                        <br>
+                        <label class="label" for="Potassium">Potassium</label>
+                        <br>
+                        <input type="text" name="Potassium" id="Potassium" class="text-input"/>
+                    </div>
+                    <div class="col">
+                        <label class="label" for="Calcium">Calcium</label>
+                        <br>
+                        <input type="text" name="Calcium" id="Calcium" class="text-input"/>
+                        <br>
+                        <label class="label" for="Barium">Barium</label>
+                        <br>
+                        <input type="text" name="Barium" id="Barium" class="text-input"/>
+                        <br>
+                        <label class="label" for="Iron">Iron</label>
+                        <br>
+                        <input type="text" name="Iron" id="Iron" class="text-input"/>
+                    </div>
+                </div>
+                <div class="row">{{ prediction_text }}</div>
+                <div class="row">
+                    <button type="submit" class="btn"><span>Predict Type</span></button>
+                </div>
+            </form>
+            <div class="row footer">
+                <p>Image Credit: <a href="https://www.pexels.com/photo/architect-architecture-beach-bridge-262347/">Pixabay on pexels.com</a> </p>
+                <p>Developed by: Taeef Najib</p>
+                <br>
+                <a href="https://www.linkedin.com/in/taeefnajib/" target=”_blank”><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/taeefnajib" target=”_blank”><i class="fa fa-github"></i></a>
+                <a href="https://stackoverflow.com/users/18165596/taeef-najib" target=”_blank”><i class="fa fa-stack-overflow"></i></a>
+                
+            </div>
+        </div>
+    </body>
+</html>

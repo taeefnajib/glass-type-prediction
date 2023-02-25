@@ -1,0 +1,128 @@
+*  
+    { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+}
+
+body 
+    { 
+    background-color: #000000;     
+    text-align:center; 
+} 
+
+.container
+    {  
+    width:990px;  
+    text-align:left;   
+    margin-left:auto;  
+    margin-right:auto;  
+    background-color: #1d1d1d; 
+    color: #ffffff;
+    height: 100%;
+    overflow: hidden;
+}
+
+.row {
+    width: 100%;
+    float: left;
+    text-align: center; 
+    margin-top: 50px;
+}
+
+.col {
+    width: 33%;
+    float: left;
+    margin-left:auto;  
+    margin-right:auto; 
+}
+
+.heading {
+    background: linear-gradient(242deg, rgb(104 0 243 / 88%), rgb(0 0 0 / 69%)), url("image/img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 0px;
+}
+
+.form {
+    margin: auto;
+}
+
+.label {
+    line-height: 2.5;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 10pt;
+}
+.footer {
+    margin-bottom: 20px;
+}
+.footer > p {
+    font-family: 'Noto Sans', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 10pt;
+    color: #ffffff;
+}
+.footer > p > a {
+    color: #ffffff
+}
+.footer > a {
+    color: #ffffff
+}
+.footer > a > i {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+h1 {
+    color: #ffffff;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+    font-size: 28pt;
+}
+p {
+    color: #ffffff;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 12pt;
+}
+.btn > span {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+    font-size: 11pt;
+    text-transform: uppercase;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.text-center {
+    text-align: center;
+}
+
+.btn {
+    background-color: #6f4cff;
+    color: #ffffff;
+    height: 50px;
+    width: 250px;
+    padding: 10px;
+    transition: 0.3s;   
+}
+.btn:hover {
+    background-color: #573cc2;
+}
+.text-input {
+    height: 30px;
+    margin-bottom: 30px;
+    padding: 5px 10px;
+}
+
